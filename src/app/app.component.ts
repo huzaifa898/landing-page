@@ -6,6 +6,7 @@ import { WhatMakesUsDifferentComponent } from './what-makes-us-different/what-ma
 import { IronGlovePromiseComponent } from './iron-glove-promise/iron-glove-promise.component';
 import { QualityAssuranceComponent } from './quality-assurance/quality-assurance.component';
 import { IndustrySliderComponent } from './industry-slider/industry-slider.component';
+import { PartnersSectionComponent } from './components/partners-section/partners-section.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -16,7 +17,8 @@ import { IndustrySliderComponent } from './industry-slider/industry-slider.compo
     WhatMakesUsDifferentComponent,
     IronGlovePromiseComponent,
     QualityAssuranceComponent,
-    IndustrySliderComponent
+    IndustrySliderComponent,
+    PartnersSectionComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

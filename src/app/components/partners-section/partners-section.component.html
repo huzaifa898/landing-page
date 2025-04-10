@@ -1,0 +1,29 @@
+<section class="partners-section">
+    <div class="text-row">
+      <div class="left">
+        <h2>
+          Our Trusted <span class="highlight">Partners & Clients</span>
+        </h2>
+      </div>
+      <div class="right">
+        <p>
+          At Iron Glove Co., we take pride in the strong relationships we've built with
+          industry leaders and clients worldwide. Our commitment to quality and innovation
+          has earned us the trust of professionals across various sectors. Here are some
+          of the respected companies and organizations we proudly work with.
+        </p>
+      </div>
+    </div>
+  
+    <div class="logo-row">
+      <div class="logo" *ngFor="let logo of visibleLogos">
+        <img [src]="logo" alt="Partner logo" />
+      </div>
+  
+      <!-- Half-visible logo as trigger -->
+      <div class="logo more-logo" (click)="showAll = true" *ngIf="!showAll">
+        <img [src]="hiddenLogos[0]" alt="More logos" />
+      </div>
+    </div>
+  </section>
+  
