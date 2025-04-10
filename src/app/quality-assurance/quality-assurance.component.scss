@@ -1,0 +1,26 @@
+.quality-assurance-section {
+    background: linear-gradient(to bottom, #fff4ed, #ffffff);
+  
+    .text-orange {
+      color: #ff6d00;
+    }
+  
+    h2 {
+      font-size: 2.25rem;
+      @media (min-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+  
+    .card {
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  
+    .fs-1 {
+      font-size: 2.5rem;
+    }
+  }
+  

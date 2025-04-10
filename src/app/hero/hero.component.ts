@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent {
-  title = 'landing-page';
-  logoPath = 'assets/Logo.png';  
+  // Path to images
+  logoPath = 'assets/logo.png';        // Path to logo image
+  ironLogoPath = 'assets/iron-logo.png';  // Path to iron logo image
 }

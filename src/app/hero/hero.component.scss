@@ -1,114 +1,161 @@
+/* Top Menu */
 .top-menu {
-    width: 1296px;
-    height: 112px;
-    gap: 24px;
-    padding: 20px 32px;
-    border-radius: 100px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    margin: auto;
-    margin-top: 20px;
+  width: 1296px; /* Apply your specific width */
+  height: 112px; /* Keep the height as specified */
+  gap: 24px;
+  padding-top: 20px; /* Set top padding */
+  padding-right: 32px; /* Set right padding */
+  padding-bottom: 20px; /* Set bottom padding */
+  padding-left: 32px; /* Set left padding */
+  border-radius: 100px; /* Apply rounded corners */
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  position: absolute; /* Position the top menu above the background image */
+  top: 20px; /* Align the top menu to the top of the viewport */
+  left: 0; /* Ensure the menu stretches from left to right */
+  right: 0; /* Ensure the menu stretches from left to right */
+  z-index: 10; /* Keep the top menu above the background */
+  margin: auto; /* Center the top menu */
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Vertically center the items */
+}
+
+/* Logo within the top menu */
+.top-menu .logo {
+  width: 68px;
+  height: 72px;
+}
+
+/* Navigation links */
+.top-menu .nav-links {
+  display: flex;
+  gap: 32px;
+  justify-content: center; /* Centers the links horizontally */
+  width: 100%; /* Ensures it takes up full width of the top menu */
+  max-width: 890px; /* Max width to match your previous design */
+  padding-left: 0; /* Remove padding for better centering */
   
-    .logo {
-      width: 23px;
-      height: 39px;
-    }
-  
-    .nav-links {
-      width: 890px;
-      gap: 32px;
-      padding-left: 100px;
-  
-      a {
-        text-decoration: none;
-        color: #000;
-        font-weight: 500;
-  
-        &.active {
-          color: orange;
-        }
-      }
-    }
-  
-    .request-btn {
-      width: 226px;
-      height: 60px;
-      padding: 18px 32px;
-      border-radius: 32px;
-      background: #000;
-      color: #fff;
-      font-weight: 500;
-      border: none;
+  a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+
+    &.active {
+      color: orange;
     }
   }
+}
+
+/* Request button */
+.top-menu .request-btn {
+  width: 226px;
+  height: 60px;
+  padding: 18px 32px;
+  border-radius: 32px;
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  height: 100vh; /* Full height of the screen */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.33) 40.58%, #000000 100%), url('/assets/heroimage.png') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 0; /* Remove any extra padding */
+}
+
+
+.hero-section {
+  width: 100%;
+  height: 100vh; /* Full height of the screen */
+  background: url('/assets/heroimage.png') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-end; /* Align items to the bottom */
+  padding: 0; /* Remove any extra padding */
+}
+
+/* Wrapper for Hero Content and Logo */
+.hero-section .hero-content-wrapper {
+  width: 1240px; /* Full width */
+  padding: 20px; /* Add some padding at the bottom */
+  display: flex;
+  justify-content: space-between; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  gap: 20px; /* Add space between text and logo */
+}
+
+/* Hero content (Text) */
+.hero-section .hero-content {
+  color: white;
+  text-align: left; /* Align text to the left */
+  max-width: 700px; /* Limit text width */
   
-  .hero-section {
-    width: 1440px;
-    height: 700px;
-    gap: 60px;
-    padding: 60px 100px;
-    background: url('/assets/bg.jpg') center/cover no-repeat;
-    position: relative;
-  
-    .hero-content {
-      width: 1240px;
-      height: 252px;
-      gap: 100px;
-  
-      h1 {
-        font-size: 2.5rem;
-        font-weight: bold;
-      }
-  
-      p {
-        font-size: 1.1rem;
-        margin-top: 20px;
-        max-width: 800px;
-      }
+}
+
+.hero-section .hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-section .hero-content p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero logo */
+.hero-section .hero-logo {
+  margin-top: 20px;
+}
+
+.hero-section .hero-logo img {
+  width: 150px;
+}
+
+@media (max-width: 768px) {
+  .top-menu {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-left: 0;
     }
-  
-    .hero-logo {
-      position: absolute;
-      bottom: 40px;
-      right: 40px;
-      img {
-        width: 150px;
-      }
+
+    .request-btn {
+      width: 100%;
     }
   }
 
-  
-  @media (max-width: 768px) {
-    .top-menu {
-      flex-direction: column;
-      height: auto;
-      gap: 10px;
-  
-      .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-left: 0;
-      }
-  
-      .request-btn {
-        width: 100%;
-      }
-    }
-  
-    .hero-section {
+  .hero-section {
+    width: 100%;
+    height: 100vh; /* Ensure the hero section still takes full screen height */
+    padding: 20px;
+
+    .hero-content {
       width: 100%;
-      padding: 20px;
-  
-      .hero-content {
-        width: 100%;
-        text-align: center;
-      }
-  
-      .hero-logo {
-        position: static;
-        text-align: center;
-        margin-top: 20px;
-      }
+      text-align: center;
+    }
+
+    .hero-logo {
+      position: static;
+      text-align: center;
+      margin-top: 20px;
     }
   }
-  
+}

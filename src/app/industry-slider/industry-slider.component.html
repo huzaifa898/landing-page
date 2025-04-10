@@ -1,0 +1,32 @@
+<div class="hero-wrapper">
+  <section class="hero-section">
+    <div class="heading-block">
+      <h2>
+        Serving <span class="text-orange">Professionals</span><br />
+        Across <span class="text-orange">Industries.</span>
+      </h2>
+      <p>
+        Iron Glove Co. designs specialized gloves for a wide range of industries —
+        from healthcare and construction to food service and tactical operations.
+      </p>
+    </div>
+
+    <div class="scroll-container">
+      <div class="image-row">
+        <ng-container *ngFor="let item of visibleIndustries">
+          <div class="industry-card">
+            <img [src]="item.img" [alt]="item.title" />
+            <p class="industry-title">{{ item.title }}</p>
+          </div>
+        </ng-container>
+        <!-- Duplicated for smooth infinite scroll -->
+        <ng-container *ngFor="let item of visibleIndustries">
+          <div class="industry-card">
+            <img [src]="item.img" [alt]="item.title" />
+            <p class="industry-title">{{ item.title }}</p>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </section>
+</div>

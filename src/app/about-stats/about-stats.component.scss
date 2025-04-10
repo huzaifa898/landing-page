@@ -1,0 +1,53 @@
+.about-stats {
+    padding: 80px 100px;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+  
+    &__content {
+      text-align: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  
+    &__description {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.5;
+      margin-bottom: 48px;
+  
+      .about-stats__highlight {
+        display: block;
+        color: #777;
+        font-weight: 400;
+        font-size: 22px;
+        margin-top: 20px;
+      }
+    }
+  
+    &__numbers {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+  
+    .stat {
+      flex: 1 1 200px;
+      text-align: center;
+  
+      h2 {
+        font-size: 36px;
+        font-weight: 700;
+        color: #f97316; // Tailwind's orange-500
+        margin-bottom: 8px;
+      }
+  
+      p {
+        font-size: 16px;
+        color: #444;
+        line-height: 1.4;
+      }
+    }
+  }
+  
