@@ -20,12 +20,14 @@
       flex: 1;
   
       h4 {
+        font-family: 'Sora';
         font-weight: 600;
         font-size: 18px;
         margin-bottom: 12px;
       }
   
       ul {
+        font-family: 'Sora';
         list-style: none;
         padding: 0;
         li {
@@ -44,6 +46,7 @@
       }
   
       .description {
+        font-family: 'Sora';
         font-size: 14px;
         line-height: 1.5;
       }
@@ -69,6 +72,7 @@
       display: flex;
       justify-content: space-between;
       font-size: 14px;
+      font-family: 'Sora';
   
       .legal-links {
         display: flex;
@@ -80,6 +84,45 @@
         display: flex;
         align-items: center;
         gap: 8px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      width: 100%;
+      padding: 40px 20px;
+      height: auto;
+      gap: 40px;
+  
+      .footer-content {
+        flex-direction: column;
+        gap: 32px;
+      }
+  
+      .footer-column,
+      .logo-column {
+        max-width: 100%;
+      }
+  
+      .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        text-align: center;
+  
+        .legal-links {
+          flex-direction: column;
+          gap: 8px;
+        }
+  
+        .back-to-top {
+          justify-content: center;
+        }
+      }
+  
+      hr {
+        margin: 0 auto;
       }
     }
   }

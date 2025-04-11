@@ -20,9 +20,10 @@
       justify-content: center;
   
       h2 {
+        font-family: 'Sora';
         font-size: 48px;
-        font-weight: 700;
-        line-height: 1.3;
+        font-weight: 600;
+        line-height: 1.5;
   
         .highlight {
           color: #f97316;
@@ -30,7 +31,10 @@
       }
   
       p {
-        font-size: 18px;
+        font-family: 'Sora';
+        font-weight: 300;
+        line-height: 150%;
+        font-size: 20px;
         color: #444;
         margin-top: 20px;
       }
@@ -41,6 +45,7 @@
         gap: 24px;
   
         .btn {
+          font-family: 'Sora';
           padding: 16px 32px;
           font-size: 16px;
           border-radius: 30px;
@@ -75,6 +80,54 @@
         height: 100%; // ← stretch image to container height
         width: auto;
         object-fit: contain;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .bulk-order-section {
+      flex-direction: column;
+      height: auto;
+      padding: 40px 20px;
+      gap: 40px;
+      width: 100%;
+  
+      .text-content {
+        align-items: center;
+        text-align: center;
+  
+        h2 {
+          font-size: 32px;
+          line-height: 1.2;
+        }
+  
+        p {
+          font-size: 16px;
+          margin-top: 16px;
+        }
+  
+        .buttons {
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+          margin-top: 24px;
+  
+          .btn {
+            width: 100%;
+            max-width: 280px;
+          }
+        }
+      }
+  
+      .image-container {
+        justify-content: center;
+  
+        img {
+          width: 100%;
+          height: auto;
+          max-height: 300px;
+          object-fit: contain;
+        }
       }
     }
   }
