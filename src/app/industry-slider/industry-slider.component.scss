@@ -36,13 +36,18 @@ body, html {
   justify-content: center;
 
   h2 {
-    font-weight: bold;
-    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Sora';
+    font-size: 48px;
+     line-height: 100%;
     margin: 0;
   }
 
   p {
-    font-size: 1.125rem;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Sora';
+    line-height: 150%;
     color: #6c757d;
     margin: 0;
   }
@@ -59,13 +64,13 @@ body, html {
 
 .image-row {
   display: flex;
-  gap: 48px;
+  gap: 38px;
   animation: scrollImages 30s linear infinite;
 }
 
 .industry-card {
   flex: 0 0 auto;
-  width: 250px;
+  width: 350px;
   text-align: center;
 }
 
@@ -78,6 +83,7 @@ body, html {
 .industry-title {
   margin-top: 10px;
   font-weight: 500;
+  font-family: 'Sora';
 }
 
 /* Infinite scroll animation */
@@ -87,5 +93,46 @@ body, html {
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+@media (max-width: 768px) {
+  .hero-wrapper {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero-section {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .heading-block {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    gap: 16px;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .image-row {
+    gap: 16px;
+    animation: scrollImages 20s linear infinite;
+  }
+
+  .industry-card {
+    width: 220px;
+  }
+
+  .industry-title {
+    font-size: 14px;
   }
 }

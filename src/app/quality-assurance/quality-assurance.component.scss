@@ -6,13 +6,24 @@
     }
   
     h2 {
+      font-family: 'Sora';
       font-size: 2.25rem;
+      line-height: 100%;
       @media (min-width: 768px) {
         font-size: 2.5rem;
       }
     }
+    .text-muted{
+      color: #666666;
+      font-family: 'Sora';
+      font-weight: 300;
+      line-height: 150%;
+    }
   
     .card {
+       width: 381px;
+       height: 301px;
+       font-family: 'Sora';
       transition: transform 0.3s ease;
       &:hover {
         transform: translateY(-5px);
@@ -21,6 +32,33 @@
   
     .fs-1 {
       font-size: 2.5rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .quality-assurance-section {
+      padding: 40px 20px;
+  
+      h2 {
+        font-size: 1.75rem;
+        text-align: center;
+      }
+  
+      .text-muted {
+        font-size: 14px;
+        text-align: center;
+        padding: 0 10px;
+      }
+  
+      .card {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+      }
+  
+      .fs-1 {
+        font-size: 2rem;
+      }
     }
   }
   

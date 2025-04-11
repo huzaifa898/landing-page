@@ -1,30 +1,42 @@
 <!-- Top Menu -->
 <div class="top-menu d-flex justify-content-between align-items-center px-4 py-3 rounded-pill">
-    <img [src]="logoPath" class="logo" alt="Logo" />
-    
-    <nav class="d-flex gap-4 nav-links">
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#" class="active">About Us</a>
-      <a href="#">Contact Us</a>
-    </nav>
-    
-    <button class="btn request-btn">Request a Quote</button>
+  <!-- Logo -->
+  <img [src]="logoPath" class="logo" alt="Logo" />
+
+  <!-- Burger Button (only on mobile) -->
+  <button class="burger-menu d-md-none" (click)="toggleMenu()">
+    &#9776; <!-- Hamburger icon -->
+  </button>
+
+  <!-- Nav Links (toggle show/hide on mobile) -->
+  <nav
+    class="d-flex gap-4 nav-links"
+    [ngClass]="{ 'show': isMenuOpen }"
+  >
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#" class="active">About Us</a>
+    <a href="#">Contact Us</a>
+  </nav>
+
+  <!-- Request Button (hidden on small screens if needed) -->
+  <button class="btn request-btn d-none d-md-inline-flex">
+    Request a Quote
+  </button>
 </div>
 
 <!-- Hero Section -->
 <div class="hero-section">
-    <div class="hero-content-wrapper">
-      <div class="hero-content">
-        <h1 class="fw-bold">Our Mission to Empower Safer Workplaces Worldwide</h1>
-        <p>
-          At Iron Glove Co, our mission is to equip professionals with gloves that offer safety, comfort, and performance — so they can work confidently in any environment.
-        </p>
-      </div>
-  
-      <div class="hero-logo"> 
-        <img [src]="ironLogoPath" alt="Iron Glove Logo" />
-      </div>
+  <div class="hero-content-wrapper">
+    <div class="hero-content">
+      <h1 class="fw-bold">Our Mission to Empower Safer Workplaces Worldwide</h1>
+      <p>
+        At Iron Glove Co, our mission is to equip professionals with gloves that offer safety, comfort, and performance — so they can work confidently in any environment.
+      </p>
+    </div>
+
+    <div class="hero-logo">
+      <img [src]="ironLogoPath" alt="Iron Glove Logo" />
     </div>
   </div>
-  
+</div>

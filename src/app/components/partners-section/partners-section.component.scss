@@ -12,8 +12,10 @@
   
       .left {
         h2 {
-          font-size: 40px;
+          font-family: 'Sora';
+          font-size: 48px;
           font-weight: 700;
+          line-height: 100%;
   
           .highlight {
             color: #f97316;
@@ -23,9 +25,10 @@
   
       .right {
         flex: 1;
-        font-size: 18px;
+        font-size: 20px;
         color: #444;
-        line-height: 1.6;
+        line-height: 150%;
+        font-family: 'Sora';
       }
     }
   
@@ -43,8 +46,8 @@
         flex: 0 0 auto;
   
         img {
-          max-height: 100px;
-          max-width: 120px;
+          max-height: 71px;
+          max-width: 122px;
           object-fit: contain;
           transition: transform 0.3s ease;
         }
@@ -62,6 +65,49 @@
   
         &:hover img {
           opacity: 0.8;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .partners-section {
+      padding: 40px 20px;
+  
+      .text-row {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 24px;
+        text-align: center;
+  
+        .left {
+          h2 {
+            font-size: 32px;
+          }
+        }
+  
+        .right {
+          font-size: 16px;
+        }
+      }
+  
+      .logo-row {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        height: auto;
+        margin-top: 32px;
+  
+        .logo {
+          img {
+            max-height: 50px;
+            max-width: 100px;
+          }
+        }
+  
+        .more-logo img {
+          transform: scale(0.4);
         }
       }
     }

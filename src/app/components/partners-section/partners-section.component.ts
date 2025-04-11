@@ -18,8 +18,7 @@ export class PartnersSectionComponent {
     'assets/image4.png',
     'assets/image5.png',
     'assets/image6.png',
-    'assets/image1.png',
-    'assets/image2.png'
+    
   ];
 
   get visibleLogos() {
