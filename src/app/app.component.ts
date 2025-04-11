@@ -7,6 +7,9 @@ import { IronGlovePromiseComponent } from './iron-glove-promise/iron-glove-promi
 import { QualityAssuranceComponent } from './quality-assurance/quality-assurance.component';
 import { IndustrySliderComponent } from './industry-slider/industry-slider.component';
 import { PartnersSectionComponent } from './components/partners-section/partners-section.component';
+import { TeamSliderComponent } from './team-slider/team-slider.component';
+import { BulkOrderComponent } from './bulk-order/bulk-order.component';
+import { FooterComponent } from './components/footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -18,7 +21,10 @@ import { PartnersSectionComponent } from './components/partners-section/partners
     IronGlovePromiseComponent,
     QualityAssuranceComponent,
     IndustrySliderComponent,
-    PartnersSectionComponent
+    PartnersSectionComponent,
+    TeamSliderComponent,
+    BulkOrderComponent ,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
