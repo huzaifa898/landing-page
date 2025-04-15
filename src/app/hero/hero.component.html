@@ -13,10 +13,11 @@
     class="d-flex gap-4 nav-links"
     [ngClass]="{ 'show': isMenuOpen }"
   >
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#" class="active">About Us</a>
-    <a href="#">Contact Us</a>
+  <a routerLink="/home">Home</a>
+  <a routerLink="/products">Products</a>
+  <a routerLink="/about-us" routerLinkActive="active">About Us</a>
+  <a routerLink="/contact-us">Contact Us</a>
+  
   </nav>
 
   <!-- Request Button (hidden on small screens if needed) -->
