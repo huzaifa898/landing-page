@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeroComponent } from '../../hero/hero.component';
 import { AboutStatsComponent } from '../../about-stats/about-stats.component';
 import { WhatMakesUsDifferentComponent } from '../../what-makes-us-different/what-makes-us-different.component';
 import { IronGlovePromiseComponent } from '../../iron-glove-promise/iron-glove-promise.component';
@@ -14,6 +15,7 @@ import { BulkOrderComponent } from '../../bulk-order/bulk-order.component';
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.scss'],
   imports: [
+    HeroComponent,
     AboutStatsComponent,
     WhatMakesUsDifferentComponent,
     IronGlovePromiseComponent,
