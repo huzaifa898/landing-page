@@ -1,0 +1,50 @@
+<!-- Top Menu -->
+<div class="container">
+    <div class="top-menu d-flex justify-content-between align-items-center px-4 py-3 rounded-pill">
+        <!-- Logo -->
+        <img [src]="logoPath" class="logo" alt="Logo" />
+      
+        <!-- Burger Button (only on mobile) -->
+        <button class="burger-menu d-md-none" (click)="toggleMenu()">
+          &#9776; <!-- Hamburger icon -->
+        </button>
+      
+        <!-- Nav Links (toggle show/hide on mobile) -->
+        <nav
+          class="d-flex gap-4 nav-links"
+          [ngClass]="{ 'show': isMenuOpen }"
+        >
+        <a routerLink="/home">Home</a>
+        <a routerLink="/products">Products</a>
+        <a routerLink="/about-us" routerLinkActive="active">About Us</a>
+        <a routerLink="/contact-us">Contact Us</a>
+        
+        </nav>
+      
+        <!-- Request Button (hidden on small screens if needed) -->
+        <button class="btn request-btn d-none d-md-inline-flex">
+          Request a Quote
+        </button>
+      </div>
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <div class="hero-content-wrapper">
+          <!-- Left Content -->
+          <div class="hero-content">
+            <h1>
+                We’d Love <span class="highlight-orange"> to Hear</span><br />
+              form <span class="highlight-orange">You</span>
+            </h1>
+            <p>
+              Sterile, medical-grade gloves crafted for laboratory professionals, ensuring accuracy, flexibility, and resistance to contamination.
+            </p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, vel? Autem similique rerum impedit. Quas accusamus nisi veritatis voluptates blanditiis?</p>
+          </div>
+      
+          <!-- Right Image -->
+          <div class="hero-image">
+            <img [src]="heroImagePath" alt="Hero Woman" />
+          </div>
+        </div>
+      </div>
+    </div>
